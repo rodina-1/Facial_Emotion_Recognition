@@ -1,4 +1,3 @@
-# Facial-Emotion-Recognition-
 # Facial Emotion Recognition (FER) using Swin Transformer
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
@@ -93,7 +92,7 @@ test_transforms = transforms.Compose([
 ✔ Grayscale conversion
 ✔ Image resizing
 
-##  ** Model Architectures **
+##  **Model Architectures**
 1️⃣ Baseline CNN (Initial Experiment)
 
 -Simple convolutional layers
@@ -114,7 +113,7 @@ Swin Transformer introduces:
 
 ->This model dramatically improved accuracy and per-class metrics.
 
-##  ** Training Setup **
+##  **Training Setup**
 
 Epochs: 60
 Batch size: 64
@@ -125,7 +124,7 @@ Early Stopping: patience = 10
 Checkpointing: every 5 epochs
 Hardware: NVIDIA T4 GPU
 
-## ** Results **
+## **Results**
 
 <img width="603" height="448" alt="image" src="https://github.com/user-attachments/assets/411324c9-d4a4-4010-995d-a916c03e41de" />
 
@@ -136,7 +135,7 @@ Neutral → Sad : 46
 Sad → Neutral : 38
 Disgust → Neutral : 20
 
-## ** Confusion Matrix & Explainability **
+## **Confusion Matrix & Explainability**
 
 We generated:
 
@@ -146,7 +145,7 @@ We generated:
 
 This enhances model interpretability and supports academic discussion.
 
-## ** Team Contributions **
+## **Team Contributions**
 Rodina Hesham
 
 Data Cleaning
@@ -177,7 +176,7 @@ Streamlit GUI
 User interface
 Model inference pipeline
 
-## ** Technologies Used **
+## **Technologies Used**
 
 -Python
 -PyTorch
