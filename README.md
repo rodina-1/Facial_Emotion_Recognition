@@ -30,7 +30,7 @@ The final deployed model is based on **Swin Transformer**, due to its superior p
 
 ##  **Project Description**
 
-This project focuses on classifying facial expressions into **seven emotion categories**:(0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral)
+This project focuses on classifying facial expressions into **seven emotion categories**:(0= 'Surprise',1= 'Fear', 2= 'Disgust', 3= 'Happy', 4= 'Sad', 5= 'Angry', 6= 'Neutral')
 
 
 We developed and compared two models:
@@ -52,7 +52,7 @@ The project includes:
 ##  **Dataset**
 
 - **Source:** RAF-DB (Kaggle)  
-- **Link:** https://www.kaggle.com/datasets/msambare/fer2013  
+- **Link:** https://www.kaggle.com/datasets/shuvoalok/raf-db-dataset  
 - **Image size:** 48×48 grayscale  
 - **Train size:** 12,271 images  
 - **Test size:** 3,068 images  
