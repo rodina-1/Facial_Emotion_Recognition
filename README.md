@@ -34,7 +34,7 @@ This project focuses on classifying facial expressions into **seven emotion cate
 We developed and compared two models:
 
 - **Baseline CNN** → helped understand dataset behavior but achieved limited accuracy (~74.5%).  
-- **Swin Transformer** → significantly improved performance and became the final chosen model.
+- **Swin Transformer** → significantly improved performance and became the final chosen model(~82%).
 
 The project includes:
 
@@ -67,6 +67,7 @@ Data Loading → Preprocessing → Augmentation → Model Training (CNN/Swin) �
 
 ##  **Preprocessing**
 For CNN
+
 Using `torchvision.transforms`:
 
 python
@@ -87,6 +88,25 @@ val_test_transforms = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406],
                         std=[0.229, 0.224, 0.225])
+])
+
+____________________________________________________________________________
+For Swin Treansform 
+
+train_transform = transforms.Compose([
+    transforms.Resize((224,224)),
+    transforms.RandomHorizontalFlip(),
+    transforms.RandomRotation(15),
+    transforms.ColorJitter(brightness=0.3, contrast=0.3),
+    transforms.RandomResizedCrop(224, scale=(0.8,1.0)),
+    transforms.ToTensor(),
+    transforms.Normalize([0.485,0.456,0.406],[0.229,0.224,0.225])
+])
+
+test_transform = transforms.Compose([
+    transforms.Resize((224,224)),
+    transforms.ToTensor(),
+    transforms.Normalize([0.485,0.456,0.406],[0.229,0.224,0.225])
 ])
 
 ✔ Normalization
@@ -124,6 +144,9 @@ Swin Transformer introduces:
 ✔ Strong performance on image classification tasks
 
 ✔ Better handling of spatial dependencies
+
+✔ Achieved ~82% accuracy
+
 
 ->This model dramatically improved accuracy and per-class metrics.
 
