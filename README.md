@@ -21,7 +21,7 @@ The final deployed model is based on **Swin Transformer**, due to its superior p
 7. [Results](#results)  
 8. [Confusion Matrix & Explainability](#confusion-matrix--explainability)    
 9. [Team Contributions](#team-contributions)
-10. [Technologies Used](#technologies_used)
+10. [Technologies Used](#technologies-used)
 11. [License](#license)
 
 ---
