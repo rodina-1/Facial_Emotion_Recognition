@@ -214,7 +214,7 @@ We generated:
 -Integrated the Swin Transformer with the Streamlit application, ensuring seamless communication between the model backend and the user-facing frontend.
 
 
-## **Technologies Used**
+##  **Technologies Used**
 
 -Python
 
